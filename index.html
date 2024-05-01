@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário | GN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <div class="header-container"> 
+        <h1>Cadastrando Alunos</h1>
+        <button onclick="adicionar()" id="add-button">Adicionar</button>
+    </div>
+    <table id="table-students">
+        <thead>
+            <tr>
+                <th>R.A. (nº matrícula)</th>
+                <th>Nome</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th>Curso</th>
+                <th class="acoes">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <div id="container-modal">
+        <form id="form-modal" onsubmit="return false">
+            <div class="form-group">
+                <fieldset>
+                    <legend><b>Cadastro de Alunos</b></legend>
+                    <br>
+                    <div class="inputBox">
+                            <input type="text" name="ra" id="ra" class="inputUser" required>
+                            <label class="labelInput">R.A. (nº matrícula)</label>
+                    </div>
+                        <br><br>
+                    <div class="inputBox">
+                            <input type="text" name="nome" id="nome" class="inputUser" required>
+                            <label class="labelInput">Nome</label>
+                    </div>
+                        <br><br>
+                    <div class="inputBox">
+                            <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                            <label class="labelInput">Cidade</label>
+                    </div>
+                        <br><br>
+                    <div class="inputBox">
+                            <input type="text" name="estado" id="estado" class="inputUser" required>
+                            <label class="labelInput">Estado</label>
+                    </div>
+                        <br><br>
+                    <div class="inputBox">
+                            <input type="text" name="curso" id="curso" class="inputUser" required>
+                            <label class="labelInput">Curso</label>
+                    </div>
+                        <br><br>
+                    <div class="form-buttons">
+                            <button onclick="salvar()" class="button">Salvar</button>
+                            <button onclick="cancelar()" class="button">Cancelar</button>
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

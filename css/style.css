@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(img/background.jpg) center;
+    background-repeat: no-repeat; /* Para evitar a repetição da imagem */
+}
+
+#container-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    top: 50%;
+}
+
+.header-container h1 {
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+    padding: 0px;
+}
+
+#add-button {
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    border: none;
+    padding: 15px;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#add-button:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
+/* Estilo para os botões Alterar e Excluir */
+#table-students button {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+#table-students button:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
+#table-students {
+    width: 60%;
+}
+
+#table-students th {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    color: white;
+    padding: 8px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+#table-students th .acoes {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    color: white;
+    padding: 2px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+#table-students td {
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    border-right: 2px solid #ccc;
+}
+
+#table-students tr:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form-group{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0,0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    color: white;
+}
+
+fieldset {
+    border: 3px solid dodgerblue;
+}
+
+legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;  
+    margin-bottom: 10px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    z-index: 1; /* Garantindo que a label esteja na frente do input oculto */
+}
+
+.inputUser:focus ~ .labelInput, 
+.inputUser:valid ~ .labelInput { 
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+.button {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.button:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
